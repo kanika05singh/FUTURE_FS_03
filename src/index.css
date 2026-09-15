@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset anchor scrolling so the sticky navbar never covers a section heading */
+section[id] {
+  scroll-margin-top: 84px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Visible, brand-colored keyboard focus state for every interactive element */
+:focus-visible {
+  outline: 2px solid #e6402a;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background-color: #e6402a;
+  color: #fafaf8;
+}
+
+/* Respect users who have asked for less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

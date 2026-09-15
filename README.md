@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Urban Bite — Restaurant Website
 
 A complete, production-ready marketing website for **Urban Bite**, a modern wood-fired grill & bar in Koramangala, Bengaluru.
@@ -71,3 +72,6 @@ urban-bite/
 ├── postcss.config.js
 ├── vite.config.js
 └── package.json
+=======
+# FUTURE_FS_03
+>>>>>>> 1a8a7171081214032062ebfb31fb4f9186aa2b97
